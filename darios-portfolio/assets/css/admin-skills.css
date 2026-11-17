@@ -1,0 +1,317 @@
+
+/* =========================================
+   DARIOS - SKILLS MANAGEMENT
+   Premium Dark Admin Interface
+========================================= */
+
+.skills-page {
+    padding: 35px;
+    color: #f4f5fb;
+}
+
+/* Page heading */
+.skills-page .page-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.skills-page .page-heading h1 {
+    font-size: 30px;
+    font-weight: 750;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.skills-page .page-heading p {
+    color: #969bb0;
+    font-size: 14px;
+}
+
+/* Summary card */
+.skills-page .skill-summary {
+    position: relative;
+    overflow: hidden;
+    padding: 25px 28px;
+    max-width: 260px;
+    background: linear-gradient(135deg, #191e35, #222044);
+    border: 1px solid rgba(125, 104, 255, 0.25);
+    border-radius: 16px;
+    margin-bottom: 30px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+.skills-page .skill-summary::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: -35px;
+    top: -40px;
+    background: #795cff;
+    opacity: 0.12;
+    filter: blur(35px);
+    border-radius: 50%;
+}
+
+.skills-page .skill-summary span {
+    display: block;
+    color: #a6a9c0;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.skills-page .skill-summary strong {
+    display: block;
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+/* Main layout */
+.skills-page .skills-layout {
+    display: grid;
+    grid-template-columns: 340px minmax(0, 1fr);
+    gap: 25px;
+    align-items: start;
+}
+
+/* Panels */
+.skills-page .skill-panel {
+    background: #171b2b;
+    border: 1px solid #292f45;
+    border-radius: 16px;
+    padding: 27px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.skills-page .skill-panel h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 25px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #292f45;
+}
+
+/* Form */
+.skills-page .form-group {
+    margin-bottom: 22px;
+}
+
+.skills-page .form-group label {
+    display: block;
+    color: #c7c9d8;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills-page .form-group input {
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+    background: #101423;
+    border: 1px solid #343b52;
+    border-radius: 9px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.25s ease;
+    box-sizing: border-box;
+}
+
+.skills-page .form-group input::placeholder {
+    color: #6f758c;
+}
+
+.skills-page .form-group input:focus {
+    border-color: #8170ff;
+    box-shadow: 0 0 0 3px rgba(129, 112, 255, 0.13);
+}
+
+/* Buttons */
+.skills-page .btn-primary,
+.skills-page .btn-secondary,
+.skills-page .btn-delete,
+.skills-page .btn-edit {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s ease;
+}
+
+.skills-page .btn-primary {
+    color: #ffffff;
+    background: linear-gradient(135deg, #6965ff, #a05bff);
+    box-shadow: 0 5px 15px rgba(112, 93, 255, 0.2);
+}
+
+.skills-page .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(112, 93, 255, 0.35);
+}
+
+.skills-page .btn-secondary {
+    color: #d6d8e8;
+    background: #30364b;
+    margin-left: 7px;
+}
+
+.skills-page .btn-secondary:hover {
+    background: #414965;
+}
+
+.skills-page .btn-edit {
+    color: #a9c9ff;
+    background: rgba(61, 124, 255, 0.15);
+    border: 1px solid rgba(61, 124, 255, 0.15);
+}
+
+.skills-page .btn-edit:hover {
+    background: rgba(61, 124, 255, 0.28);
+}
+
+.skills-page .btn-delete {
+    color: #ff9eaa;
+    background: rgba(255, 77, 103, 0.12);
+    border: 1px solid rgba(255, 77, 103, 0.12);
+}
+
+.skills-page .btn-delete:hover {
+    background: rgba(255, 77, 103, 0.25);
+}
+
+/* Skills grid */
+.skills-page .skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.skills-page .skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    min-height: 62px;
+    padding: 14px 15px;
+    background: #101423;
+    border: 1px solid #292f45;
+    border-radius: 11px;
+    transition: 0.25s ease;
+}
+
+.skills-page .skill-item:hover {
+    transform: translateY(-3px);
+    border-color: #7166e8;
+    background: #171b30;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skills-page .skill-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #e8e9f3;
+    font-size: 13px;
+    font-weight: 650;
+    overflow-wrap: anywhere;
+}
+
+.skills-page .skill-name::before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    min-width: 7px;
+    border-radius: 50%;
+    background: #8972ff;
+    box-shadow: 0 0 10px rgba(137, 114, 255, 0.6);
+}
+
+.skills-page .skill-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.skills-page .skill-actions form {
+    margin: 0;
+}
+
+/* Alerts */
+.skills-page .alert {
+    padding: 15px 18px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.skills-page .alert-success {
+    color: #8de8bb;
+    background: rgba(36, 180, 120, 0.12);
+    border: 1px solid rgba(36, 180, 120, 0.3);
+}
+
+.skills-page .alert-error {
+    color: #ffabb6;
+    background: rgba(255, 77, 103, 0.12);
+    border: 1px solid rgba(255, 77, 103, 0.3);
+}
+
+/* Empty state */
+.skills-page .empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 45px 20px;
+    color: #9399ae;
+    background: #101423;
+    border: 1px dashed #343b52;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .skills-page .skills-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-page .skill-summary {
+        max-width: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .skills-page {
+        padding: 20px 15px;
+    }
+
+    .skills-page .page-heading h1 {
+        font-size: 25px;
+    }
+
+    .skills-page .skill-panel {
+        padding: 20px;
+    }
+
+    .skills-page .skill-list {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-page .skill-item {
+        flex-wrap: wrap;
+    }
+}
